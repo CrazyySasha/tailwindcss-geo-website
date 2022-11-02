@@ -633,6 +633,7 @@ module.exports = {
       none: 'none',
       disc: 'disc',
       decimal: 'decimal',
+      'decimal-zero': 'decimal-leading-zero',
     },
     margin: ({ theme }) => ({
       auto: 'auto',
