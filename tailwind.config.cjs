@@ -23,6 +23,7 @@ module.exports = {
       secondary: "#333333",
       borders: "#D6DBE1",
       by:'#fddfa8',
+      bggrey: '#4b4f5a',
 
       inherit: colors.inherit,
       current: colors.current,
