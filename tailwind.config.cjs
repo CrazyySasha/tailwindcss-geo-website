@@ -8,6 +8,7 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     screens: {
+      xs: '480px', 
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -20,6 +21,7 @@ module.exports = {
       redi:'#FF0000',
       secondary: "#333333",
       borders: "#D6DBE1",
+      by:'#fddfa8',
 
       inherit: colors.inherit,
       current: colors.current,
