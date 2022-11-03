@@ -946,6 +946,7 @@ module.exports = {
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
+      wbutton:'636px',
     }),
     willChange: {
       auto: 'auto',
