@@ -24,6 +24,7 @@ module.exports = {
       borders: "#D6DBE1",
       by:'#fddfa8',
       bggrey: '#4b4f5a',
+      progress:'#EBECED',
 
       inherit: colors.inherit,
       current: colors.current,
