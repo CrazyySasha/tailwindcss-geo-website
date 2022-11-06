@@ -22,9 +22,10 @@ module.exports = {
       redi:'#FF0000',
       secondary: "#333333",
       borders: "#D6DBE1",
-      by:'#fddfa8',
+      by:'#FFF4BB',
       bggrey: '#4b4f5a',
       progress:'#EBECED',
+      boxs: '#F7F9F9',
 
       inherit: colors.inherit,
       current: colors.current,
