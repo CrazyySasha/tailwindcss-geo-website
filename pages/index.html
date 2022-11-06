@@ -10,12 +10,14 @@
 
 <body>
 	<header class="container mx-auto px-5">
-		<div class="flex items-end py-5 gap-8 2xl:gap-20">
+		<div class="flex items-end py-5 gap-8 2xl:gap-20 max-md:justify-between">
 			<a href="" class="self-center">
-				<img class="" src="/assets/logo.svg" alt="">
+				<img class="max-xs:inline-block hidden" src="/assets/logo-xs.svg" alt="">
+				<img class="xs:max-md:inline-block hidden" src="/assets/logo-sm.svg" alt="">
+				<img class="hidden md:inline-block " src="/assets/logo.svg" alt="">
 			</a>
-			<div class="mr-auto">
-				<p class="text-sm font-normal">
+			<div class="mr-auto max-lg:hidden">
+				<p class="text-sm font-normal ">
 					Делаем инженерные изыскания <br>
 					с 2010 года в Ярославле и области
 				</p>
@@ -38,34 +40,44 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex flex-col ml-auto gap-2.5">
+			<div class="flex flex-col ml-auto gap-2.5 max-md:hidden">
 				<div class="flex items-center gap-2">
 					<img src="/assets/on-line.svg" alt="" class="h-4">
 					<p class="text-sm">Задайте вопрос <strong>ON-LINE</strong></p>
 				</div>
 				<a href=""
-					class="bg-primary shadow-xl text-white flex gap-2 box-border  rounded-xl text-sm font-bold px-5 py-3">
+					class="bg-primary shadow-xl text-white flex gap-2 box-border  rounded-xl text-sm font-bold px-5 py-3 whitespace-nowrap">
 					<img class="inline-block w-6 h-6" src="/assets/Frame.svg" alt="">
 					Написать в WhatsApp
 				</a>
 			</div>
 			<div class="flex flex-col justify-between">
-				<div class="flex gap-2 items-center">
+				<div class="flex gap-2 items-center max-md:hidden">
 					<img src="/assets/on-line.svg" alt="" class="h-4">
 					<p class="text-sm font-normal">Звоните, Пн-ВС 9:00 - 21:00</p>
 				</div>
-				<h2 class="text-3xl font-bold ">8 (920) 135-70-55</h2>
-				<div class="flex place-content-around">
-					<address class="border-b border-black text-sm font-normal">
+				<h2 class="font-bold xs:text-2xl md:text-xl lg:text-3xl">8 (920) 135-70-55</h2>
+				<div class="flex place-content-around max-xs:hidden">
+					<address class="border-b border-black  text-sm font-normal">
 						<a href="mailto:geotchk@ya.ru">
 							geotchk@ya.ru
 						</a>
 					</address>
-					<p class="text-sm border-b border-black">Заказать звонок</p>
+					<p class=" text-sm border-b border-black">Заказать звонок</p>
 				</div>
+				<a class="underline underline-offset-2 xs:hidden">
+					Написать в WhatsApp
+				</a>
 			</div>
+			<button class="bg-primary text-white p-3.5 rounded-lg hidden max-lg:block">
+				<svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25" fill="none">
+					<path d="M0.12915 2.44064H26.6218" stroke="currentColor" stroke-width="4" />
+					<path d="M0.12915 13H26.6218" stroke="currentColor" stroke-width="4" />
+					<path d="M0.12915 22.6794H26.6218" stroke="currentColor" stroke-width="4" />
+				</svg>
+			</button>
 		</div>
-		<nav class="border-t border-t-borders ">
+		<nav class="border-t border-t-borders max-lg:hidden">
 			<ul class="flex justify-between flex-wrap">
 				<li>Цены</li>
 				<li>Услуги</li>
@@ -417,73 +429,149 @@
 			<img src="/assets/image9.png" alt="" class="">
 			<h3 class="text-lg sm:text-xl font-medium">Отбираем типы грунта и
 				передаем в лаборатою</h3>
-			<p class="">На разной глубине может залегать 2-7 типов грунтов. Важно взять все образцы и учесть особенности каждого при расчете несущей способности.</p>
+			<p class="">На разной глубине может залегать 2-7 типов грунтов. Важно взять все образцы и учесть особенности
+				каждого при расчете несущей способности.</p>
 		</div>
 		<div class="">
 			<img src="/assets/laboratoriya-geologiya.png" alt="" class="">
-			<h3 class="text-lg sm:text-xl font-medium">Испытываем образцы 
+			<h3 class="text-lg sm:text-xl font-medium">Испытываем образцы
 				в лаборатории</h3>
-			<p class="">Каждый образец испытывают в соответствии с ГОСТ 20522-2012 и ГОСТ 25100 - 2011. Получаем данные о характеристиках грунтов вашего участка.</p>
+			<p class="">Каждый образец испытывают в соответствии с ГОСТ 20522-2012 и ГОСТ 25100 - 2011. Получаем данные
+				о характеристиках грунтов вашего участка.</p>
 		</div>
-</section>
+	</section>
 
-	
+
 	<section class="container">
 		<div>
-	<div>
-		<div>
-			<h2 class="font-bold text-3xl mt-20">
-				Наши объекты
+			<div>
+				<div>
+					<h2 class="font-bold text-3xl mt-20">
+						Наши объекты
+					</h2>
+					<p>
+						Возможно мы уже делали геологию Вашим соседям. Напишите на WhatsApp Ваш адрес 89807401011 а мы
+						скажем
+						где мы<br> делали. Популярные места где мы уже были:
+					</p>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="bg-no-repeat w-1/4 aspect-square flex items-end"
+					style="background-image: url(/assets/Rectangle243.svg);">
+					<div>
+						<p class="text-white">
+							<span class="font-light text-xs">17 Август 2021</span> <br>г. Ярославль, д. Красные ткачи
+						</p>
+					</div>
+				</div>
+				<div class="bg-no-repeat w-1/4 aspect-square flex items-end"
+					style="background-image: url(/assets/Rectangle245.svg);">
+					<div>
+						<p class="text-white">
+							<span class="font-light text-xs">17 Август 2021</span> <br>г. Ярославль, д. Алексеевское
+						</p>
+					</div>
+				</div>
+				<div class="bg-no-repeat w-1/4 aspect-square flex items-end"
+					style="background-image: url(/assets/Rectangle244.svg);">
+					<div>
+						<p class="text-white text-ellipsis">
+							<span class="font-light text-xs">17 Август 2021</span> <br>г. Ярославль, д. Дубки
+						</p>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="container px-5 mx-auto">
+		<div class="mt-20">
+			<h2 class="font-bold text-3xl">
+				Что включает отчет по геологическим изысканиям?
 			</h2>
-			<p>
-				Возможно мы уже делали геологию Вашим соседям. Напишите на WhatsApp Ваш адрес 89807401011 а мы скажем
-				где мы<br> делали. Популярные места где мы уже были:
+			<p class="font-normal text-xl mt-7">
+				Отчет выполнен в соответствии с нормативными документами СП 11.105.97, СП 47.13330.2012 и ГОСТ 21.101-97
+				Наличие технического отчета по геологическим работам необходимо для получения разрешительных документов
+				на
+				строительство, реконструкцию или проведение технического перевооружения здания, а также при прокладке
+				газопроводов высокого и низкого давления. Наше заключение соответствует всем установленными
+				нормамативным
+				требованиям. Ознакомьтесь что входит в состав отчета:
 			</p>
 		</div>
-	</div>
-		<div class="flex">
-			<div class="bg-no-repeat w-1/4 aspect-square flex items-end"
-				style="background-image: url(/assets/Rectangle243.svg);">
-				<div>
-					<p class="text-white">
-						<span class="font-light text-xs">17 Август 2021</span> <br>г. Ярославль, д. Красные ткачи
+		<div class="flex justify-between">
+			<div class="flex flex-col w-1/2">
+				<div class="flex items-start my-12 border-b-2 gap-12">
+					<img src="/assets/Frame106.svg" alt="">
+					<p>
+						Титульный лист с указанием даты составления документа, названием и адресом проекта, а также и
+						печатью компании-исполнителя.
+					</p>
+				</div>
+				<div class="flex items-start my-12 border-b-2 gap-12">
+					<img src="/assets/Frame106.svg" alt="">
+					<p>
+						Пояснительная записка с перечнем работ, оборудования, списком сотрудников, расчетами
+						физико-механических свойств грунтов, данными лабораторных анализов, которые в дальнейшем служат
+						основанием для вычисления несущей способности грунтов и правильного определения типа фундамента,
+						прогнозирования возможных изменений геологических условий. </p>
+				</div>
+				<div class="flex items-start my-12 border-b-2 gap-12">
+					<img src="/assets/Frame106.svg" alt="">
+					<p>
+						Графические раздел. Разрезы, планы, таблицы и графики для визуального отображения расчетов и
+						полученных результатов.
+					</p>
+				</div>
+				<div class="flex items-start my-12 border-b-2 gap-12">
+					<img src="/assets/Frame106.svg" alt="">
+					<p>
+						Подготовленный специалистами «ГеоТочка» технический отчет в кратчайшие сроки проходит проверку и
+						без доработок принимается всеми контролирующими инстанциями.
 					</p>
 				</div>
 			</div>
-			<div class="bg-no-repeat w-1/4 aspect-square flex items-end"
-				style="background-image: url(/assets/Rectangle245.svg);">
-				<div>
-					<p class="text-white">
-						<span class="font-light text-xs">17 Август 2021</span> <br>г. Ярославль, д. Алексеевское
+			<div class="w-1/3 bg-[#F7F8F9] flex flex-col">
+				<div class="ml-auto">
+					<img src="/assets/kniga.svg" alt="">
+				</div>
+				<div class="flex gap-8 ml-14">
+					<img src="/assets/Vector2.svg" alt="">
+					<p>
+						PDF 1,5 Mb <br>Дата загрузки 26.08.22
 					</p>
 				</div>
-			</div>
-			<div class="bg-no-repeat w-1/4 aspect-square flex items-end"
-				style="background-image: url(/assets/Rectangle244.svg);">
-				<div>
-					<p class="text-white text-ellipsis">
-						<span class="font-light text-xs">17 Август 2021</span> <br>г. Ярославль, д. Дубки
-					</p>
+				<div class="self-center">
+					<button
+						class="bg-primary shadow-primary shadow-xl text-white text-xl font-semibold rounded-md px-10 py-3 mt-8">
+						ПОСМОТРЕТЬ ПРИМЕР ОТЧЕТА
+					</button>
 				</div>
 			</div>
 		</div>
-	<div class="mt-20">
-		<h2 class="font-bold text-3xl">
-			Что включает отчет по геологическим изысканиям?
-		</h2>
-		<p class="font-normal text-sm mt-7">
-			Отчет выполнен в соответствии с нормативными документами СП 11.105.97, СП 47.13330.2012 и ГОСТ 21.101-97
-			Наличие технического отчета по геологическим работам необходимо для получения разрешительных документов на
-			строительство, реконструкцию или проведение технического перевооружения здания, а также при прокладке
-			газопроводов высокого и низкого давления. Наше заключение соответствует всем установленными нормамативным
-			требованиям. Ознакомьтесь что входит в состав отчета:
-		</p>
-	</div>
-</div>
-
-
-	
-
+		</div>
+	</section>
+	<section class="container bg-[#4B4F5A] mx-auto">
+		<div class="bg-white w-64 py-6 rounded-lg text-center">
+			<p>
+				Вячеслав Олегович Власов<br>Руководитель направления
+			</p>
+		</div>
+		<div class="text-white font-medium text-4xl ">
+			“У нас 2 цели — первая, точность изысканий.<br><br>Вторая, подобрать надежный фундамент.<br> Экономически и
+			технически обоснованный,<br> без избыточных решений. Который прослужит<br> долгие годы без дефектов и
+			разрушений”
+		</div>
+		<div class="flex mt-8 gap-2.5">
+			<a href=""
+				class="bg-primary shadow-xl text-white flex gap-2 box-border  rounded-xl text-sm font-bold px-5 py-3">
+				<img class="inline-block w-6 h-6" src="/assets/Frame.svg" alt="">
+				Написать в WhatsApp
+			</a>
+			<div class="flex items-center gap-2">
+				<img src="/assets/on-line.svg" alt="" class="h-4">
+				<p class="text-sm text-white">Задайте вопрос <strong>ON-LINE</strong></p>
+			</div>
+		</div>
 	</section>
 
 
