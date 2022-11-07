@@ -26,6 +26,7 @@ module.exports = {
       bggrey: '#4b4f5a',
       progress:'#EBECED',
       boxs: '#F7F9F9',
+      bigbox:'#D9D9D9',
 
       inherit: colors.inherit,
       current: colors.current,
