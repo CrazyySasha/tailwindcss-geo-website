@@ -8,25 +8,25 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     screens: {
-      xs: '480px', 
+      xs: '480px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
       '2xl': '1536px',
-      
+
     },
     supports: {},
     colors: ({ colors }) => ({
       primary: "#009A67",
-      redi:'#FF0000',
+      redi: '#FF0000',
       secondary: "#333333",
       borders: "#D6DBE1",
-      by:'#FFF4BB',
+      by: '#FFF4BB',
       bggrey: '#4b4f5a',
-      progress:'#EBECED',
+      progress: '#EBECED',
       boxs: '#F7F9F9',
-      bigbox:'#D9D9D9',
+      bigbox: '#D9D9D9',
 
       inherit: colors.inherit,
       current: colors.current,
@@ -309,7 +309,7 @@ module.exports = {
       xl: ['0 20px 13px rgb(0 0 0 / 0.03)', '0 8px 5px rgb(0 0 0 / 0.08)'],
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000',
-      button:'0 10px 10px #009A67',
+      button: '0 10px 10px #009A67',
     },
     fill: ({ theme }) => ({
       none: 'none',
@@ -377,6 +377,9 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      PTRootUI: [
+        'PT Root UI', 'ui-sans-serif'
+      ],
       sans: [
         'ui-sans-serif',
         'system-ui',
@@ -949,7 +952,7 @@ module.exports = {
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
-      wbutton:'636px',
+      wbutton: '636px',
     }),
     willChange: {
       auto: 'auto',

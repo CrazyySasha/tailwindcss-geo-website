@@ -2,4 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+    @import url('./assets/fonts/ptrootui/ptrootui.css');
+}
 
+
+.c-navigation {
+    @apply max-lg:fixed max-lg:inset-0 lg:sticky lg:inset-x-0 lg:top-0 lg:container lg:mx-auto lg:p-5 border-t bg-white border-t-borders z-10 -translate-x-full transition-transform duration-200 ease-in-out;
+}
+
+.c-navigation.c-opened {
+    @apply max-lg:translate-x-0;
+}
