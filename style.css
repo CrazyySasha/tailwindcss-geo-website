@@ -2,25 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-  
-    border: 2px solid #999;
-    transition: 0.2s all linear;
-    outline: none;
-    margin-right: 5px;
-  
-    position: relative;
-    top: 4px;
+@layer {
+    @import url('./assets/fonts/ptrootui/ptrootui.css');
 }
-  
-input:checked {
-    border: 6px solid black;
+
+
+.c-navigation {
+    @apply max-lg:fixed max-lg:inset-0 lg:sticky lg:inset-x-0 lg:top-0 lg:container lg:mx-auto lg:p-5 border-t bg-white border-t-borders z-10 -translate-x-full transition-transform duration-200 ease-in-out;
+}
+
+.c-navigation.c-opened {
+    @apply max-lg:translate-x-0;
 }
