@@ -706,9 +706,10 @@
 
 	<footer class="container mx-auto py-16">
 		<!-- Главный див блока -->
-		<div class="">
+		<div class="mx-auto p-5">
 			<!-- Первый блок сверху -->
-			<div class="flex flex-row justify-between">
+			<div class="flex flex-col sm:flex-row justify-between">
+				<img class="block sm:hidden mb-8" src="/assets/logo.svg" alt="">
 				<div>
 					<h3 class="text-xl font-bold mb-3">Акции</h3>
 					<h3 class="text-xl font-bold mb-3">Цены</h3>
@@ -716,7 +717,8 @@
 					<h3 class="text-xl font-bold mb-3">Вопросы</h3>
 					<h3 class="text-xl font-bold mb-3">Контакты</h3>
 				</div>
-				<div>
+				
+				<div class="hidden md:block">
 					<h3 class="text-xl font-bold mb-3">Услуги</h3>
 					<h3 class="text-xl font-normal mb-3">Геологические изыскания</h3>
 					<h3 class="text-xl font-normal mb-3">Экологические изыскания</h3>
@@ -725,7 +727,7 @@
 					<h3 class="text-xl font-normal mb-3">Топографическая съемка</h3>
 					<h3 class="text-xl font-normal mb-3">Геодезические изыскания</h3>
 				</div>
-				<div>
+				<div class="hidden md:block">
 					<h3 class="text-xl font-bold mb-3">О компании</h3>
 					<h3 class="text-xl font-normal mb-3">Наше оборудование</h3>
 					<h3 class="text-xl font-normal mb-3">Наши документы</h3>
@@ -734,7 +736,7 @@
 					<h3 class="text-xl font-normal mb-3">Выполненные проекты</h3>
 					<h3 class="text-xl font-normal mb-3">Контакты</h3>
 				</div>
-				<div>
+				<div class="hidden md:block">
 					<h3 class="text-xl font-bold mb-3">Полезное</h3>
 					<h3 class="text-xl font-normal mb-3">Блог</h3>
 					<h3 class="text-xl font-normal mb-3">Статьи</h3>
@@ -745,20 +747,29 @@
 				</div>
 			</div>
 			<!-- Первый блок сверху -->
-			<div class="flex flex-row  mt-12 border-t pt-12 justify-between ">
-				<div class="w-1/5 gap-5">
-					<img class="mb-8" src="/assets/logo.svg" alt="">
-					<p class="text-sm font-normal mb-8">© 2010-2022 ООО "Геоточка"<br> Все права защищены
+			<div class="flex flex-col sm:flex-row  mt-12 border-t pt-12 justify-between ">
+				<div class=" flex md:hidden items-center gap-2 mb-3">
+					<img src="/assets/on-line.svg" alt="" class="h-4">
+					<p class="text-sm ">Задайте вопрос <strong>ON-LINE</strong></p>
+				</div>
+				<a href=""
+				class="bg-primary inline-block sm:hidden w-1/2 mb-7 shadow-xl text-white gap-2 box-border  rounded-xl text-sm font-bold px-5 py-3 whitespace-nowrap">
+				<img class="inline-block  h-6" src="/assets/Frame.svg" alt="">
+				Написать в WhatsApp
+				</a>
+				<div class="w-3/4 md:w-1/4 gap-5">
+					<img class="mb-8 hidden sm:block" src="/assets/logo.svg" alt="">
+					<p class="text-sm font-normal mb-4 sm:mb-8">© 2010-2022 ООО "Геоточка"<br class=" hidden md:inline"> Все права защищены
 						Политика конфидециальности</p>
 					<p class="text-sm font-normal mb-8">Мы используем cookie — это делает сайт удобнее для посетителей.</p>
 					<img src="/assets/seo.png" alt="">
 				</div>
-				<div class="w-1/4  gap-5">
-					<p class="text-sm font-normal ">
+				<div class="w-1/2 sm:w-1/4  gap-5">
+					<p class="hidden md:block text-sm font-normal ">
 						Делаем инженерные изыскания <br>
 						с 2010 года в Ярославле и области
 					</p>
-					<div class="flex mb-8 gap-2">
+					<div class="hidden md:flex  mb-8 gap-2">
 						<div>
 							<span class="text-redi font-semibold text-base">Я</span>
 							4,9
@@ -776,12 +787,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="flex items-center gap-2 mb-3">
+					<div class=" hidden md:flex items-center gap-2 mb-3">
 						<img src="/assets/on-line.svg" alt="" class="h-4">
 						<p class="text-sm ">Задайте вопрос <strong>ON-LINE</strong></p>
 					</div>
 					<a href=""
-					class="bg-primary inline-block mb-7 shadow-xl text-white gap-2 box-border  rounded-xl text-sm font-bold px-5 py-3 whitespace-nowrap">
+					class="bg-primary hidden sm:inline-block  mb-7 shadow-xl text-white gap-2 box-border  rounded-xl text-sm font-bold px-5 py-3 whitespace-nowrap">
 					<img class="inline-block  h-6" src="/assets/Frame.svg" alt="">
 					Написать в WhatsApp
 					</a>
@@ -796,9 +807,9 @@
 				</div>
 				<div class="w-1/4">
 					<p class="text-sm font-normal mb-7"><span class="text-sm font-bold">Приезжайте к нам в офис:</span><br>
-						150040, г. Ярославль, Мышкинский
+						150040, г. Ярославль, Мышкинский<br>
 						презд 15б, офис 311</p>
-						<div class="flex flex-row ">
+						<div class="hidden md:flex flex-row ">
 							<img class="mr-4" src="/assets/image-30.png" alt="">
 							<img src="/assets/image-31.png" alt="">
 						</div>
