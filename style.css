@@ -8,9 +8,9 @@
 
 
 .c-navigation {
-    @apply max-lg:fixed max-lg:inset-0 lg:sticky lg:inset-x-0 lg:top-0 lg:container lg:mx-auto lg:p-5 border-t bg-white border-t-borders z-10 -translate-x-full transition-transform duration-200 ease-in-out;
+    @apply max-lg:fixed max-lg:inset-0 lg:sticky lg:inset-x-0 lg:top-0  lg:mx-auto bg-white z-10 max-lg:-translate-x-full transition-transform duration-200 ease-in-out;
 }
 
-.c-navigation.c-opened {
+.c-opened .c-navigation {
     @apply max-lg:translate-x-0;
 }

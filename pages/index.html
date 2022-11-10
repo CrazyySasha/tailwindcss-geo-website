@@ -10,90 +10,100 @@
 
 <body class="mx-auto font-ptRootUI">
 	<header class="container mx-auto px-5">
-		<div class="flex max-sm:items-center items-end py-5 gap-6 lg:gap-8 2xl:gap-20 max-md:justify-between">
-			<a href="" class="self-center">
-				<img class="max-xs:inline-block hidden" src="/assets/logo-xs.svg" alt="">
-				<img class="xs:max-md:inline-block hidden" src="/assets/logo-sm.svg" alt="">
-				<img class="hidden md:inline-block " src="/assets/logo.svg" alt="">
+		<div class="flex items-stretch py-5 gap-5 lg:gap-8 2xl:gap-20 max-md:justify-between">
+			<a href="" class="self-center block">
+				<img class="max-xs:inline-block hidden max-h-12" src="/assets/logo-xs.svg" alt="">
+				<img class="xs:max-lg:block hidden object-contain xs:max-md:max-h-12" src="/assets/logo-sm.svg" alt="">
+				<img class="hidden lg:inline-block " src="/assets/logo.svg" alt="">
 			</a>
-			<div class="mr-auto max-lg:hidden">
-				<p class="text-sm font-normal ">
+			<div class="mr-auto max-lg:hidden self-end">
+				<p class="text-xs font-normal">
 					Делаем инженерные изыскания <br>
 					с 2010 года в Ярославле и области
 				</p>
-				<div class="flex">
-					<div>
-						<span class="text-redi font-semibold text-base">Я</span>
+				<div class="text-xs flex items-center gap-2">
+					<span>
+						<span class="text-redi font-semibold">Я</span>
 						4,9
+					</span>
+					<div class="inline-flex items-end">
+						<img class="w-3.5" src="/assets/star-full.svg" alt="">
+						<img class="w-3.5" src="/assets/star-full.svg" alt="">
+						<img class="w-3.5" src="/assets/star-full.svg" alt="">
+						<img class="w-3.5" src="/assets/star-full.svg" alt="">
+						<img class="w-3.5" src="/assets/star-full2.svg" alt="">
 					</div>
-					<div class="flex">
-						<img class="w-4" src="/assets/star-full.svg" alt="">
-						<img class="w-4" src="/assets/star-full.svg" alt="">
-						<img class="w-4" src="/assets/star-full.svg" alt="">
-						<img class="w-4" src="/assets/star-full.svg" alt="">
-						<img class="w-4" src="/assets/star-full2.svg" alt="">
-					</div>
-					<div>
-						<p class="">
-							22 <span class="border-b border-black ">Отзыва</span>
-						</p>
-					</div>
+					<span>
+						22
+						<span class="border-b border-black ">Отзыва</span>
+					</span>
 				</div>
 			</div>
-			<div class="flex flex-col ml-auto gap-2.5 max-md:hidden">
+			<div class="flex flex-col justify-between ml-auto gap-2.5 max-md:hidden">
 				<div class="flex items-center gap-2">
-					<img src="/assets/on-line.svg" alt="" class="h-4">
-					<p class="text-sm">Задайте вопрос <strong>ON-LINE</strong></p>
+					<img src="/assets/on-line.svg" alt="" class="h-3.5">
+					<p class="text-xs">Задайте вопрос <strong>ON-LINE</strong></p>
 				</div>
 				<a href=""
-					class="bg-primary shadow-xl text-white flex gap-2 box-border  rounded-xl text-sm font-bold px-5 py-3 whitespace-nowrap">
+					class="bg-primary shadow-lg text-white flex gap-2 box-border rounded-xl text-xs font-bold px-5 py-3 whitespace-nowrap">
 					<img class="inline-block w-6 h-6" src="/assets/Frame.svg" alt="">
 					Написать в WhatsApp
 				</a>
 			</div>
 			<div class="flex flex-col justify-between">
 				<div class="flex gap-2 items-center max-md:hidden">
-					<img src="/assets/on-line.svg" alt="" class="h-4">
-					<p class="text-sm font-normal">Звоните, Пн-ВС 9:00 - 21:00</p>
+					<img src="/assets/on-line.svg" alt="" class="h-3.5">
+					<p class="text-xs font-normal">Звоните, Пн-ВС 9:00 - 21:00</p>
 				</div>
-				<h2 class="font-bold  sm:text-2xl lg:text-3xl whitespace-nowrap">8 (920) 135-70-55</h2>
-				<div class="flex place-content-around max-xs:hidden">
-					<address class="border-b border-black  text-sm font-normal">
+				<h2 class="font-bold xs:text-3xl whitespace-nowrap">8 (920) 135-70-55</h2>
+				<div class="flex justify-between max-xs:hidden">
+					<address class="border-b border-black  text-xs font-normal">
 						<a href="mailto:geotchk@ya.ru">
 							geotchk@ya.ru
 						</a>
 					</address>
-					<p class=" text-sm border-b border-black">Заказать звонок</p>
+					<p class="text-xs border-b border-black">Заказать звонок</p>
 				</div>
 				<a class="underline underline-offset-2 xs:hidden text-xs">
 					Написать в WhatsApp
 				</a>
 			</div>
-			<button
-				class="bg-primary text-white hover:bg-white hover:text-primary border border-primary p-3 rounded-lg hidden max-lg:block">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-					<rect width="24" height="24" fill="none" />
-					<g>
-						<rect x="-684" y="-380" width="880" height="886" rx="24" fill="none" />
-						<path d="M3 7H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-						<path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-						<path d="M3 17H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-					</g>
-				</svg>
-			</button>
+			<div class="max-lg:block hidden self-end z-50">
+				<button id="toggler"
+					class="bg-primary text-white hover:bg-white hover:text-primary border border-primary p-2.5 rounded-lg">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<rect width="24" height="24" fill="none" />
+						<g>
+							<rect x="-684" y="-380" width="880" height="886" rx="24" fill="none" />
+							<path d="M3 7H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							<path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							<path d="M3 17H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</button>
+			</div>
 		</div>
-		<nav class="border-t border-t-borders max-lg:hidden">
-			<ul class="flex justify-between flex-wrap">
-				<li>Цены</li>
-				<li>Услуги</li>
-				<li>О компании</li>
-				<li>Контакты</li>
-				<li>Фотогалерея</li>
-				<li>Полезное</li>
-				<li>Лаборатория</li>
-			</ul>
-		</nav>
 	</header>
+	<nav class="c-navigation" id="menu">
+		<div class="flex justify-between lg:hidden">
+			<a href="" class="self-center block">
+				<img class="max-xs:inline-block hidden max-h-12" src="/assets/logo-xs.svg" alt="">
+				<img class="xs:max-lg:block hidden object-contain xs:max-md:max-h-12" src="/assets/logo-sm.svg" alt="">
+				<img class="hidden lg:inline-block " src="/assets/logo.svg" alt="">
+			</a>
+		</div>
+		<div class="lg:container mx-auto px-5">
+			<ul class="flex max-lg:flex-col justify-between flex-wrap border-t border-t-borders ">
+				<li><a href="#" class="block p-5 -mx-5">Цены</a></li>
+				<li><a href="#" class="block p-5 -mx-5">Услуги</a></li>
+				<li><a href="#" class="block p-5 -mx-5">О компании</a></li>
+				<li><a href="#" class="block p-5 -mx-5">Контакты</a></li>
+				<li><a href="#" class="block p-5 -mx-5">Фотогалерея</a></li>
+				<li><a href="#" class="block p-5 -mx-5">Полезное</a></li>
+				<li><a href="#" class="block p-5 -mx-5">Лаборатория</a></li>
+			</ul>
+		</div>
+	</nav>
 	<main>
 		<section class="bg-right-bottom bg-no-repeat mb-16" style="background-image: url(/assets/bgimage-1.svg);">
 			<div class="container mx-auto p-5">
@@ -158,124 +168,116 @@
 				</div>
 			</div>
 		</section>
-		<section class="container mx-auto px-5 ">
-
-			<h2 class="text-3xl font-bold leading-10 mb-14">
+		<section class="container mx-auto px-5">
+			<h2 class="text-lg xs:text-3xl md:text-4xl font-bold mb-12 md:mb-14">
 				Что входит в состав геологических изысканий?
 			</h2>
-			<p class="text-lg font-normal mb-14">
+			<p class="xs:text-lg mb-7 md:mb-14">
 				ООО «ГеоТочка» оказывает полный спектр услуг в
 				проведении геологических изысканий для строительства в Москве и области, а также в
 				центральном регионе России. В состав наших работ включены:
 			</p>
 			<div class="flex flex-col lg:flex-row gap-5 mb-16">
-				<div class=" lg:w-7/12">
-					<ol class="flex flex-col ">
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+				<div class="lg:w-7/12 lg:max-w-2xl">
+					<ol class="flex flex-col max-xs:text-sm">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								01
 							</div>
 							<div>
 								Сбор и изучение архивных геологических данных, а также материалов исследований
 								прошлых лет
-
 							</div>
 						</li>
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								02
 							</div>
 							<div>
 								Рекогносцировочные маршрутные наблюдения на местности
-
 							</div>
 						</li>
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								03
 							</div>
 							<div>
 								Бурение геологических скважин и описание разреза
-
 							</div>
 						</li>
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								04
 							</div>
 							<div>
 								Полевые испытания прочностных характеристик грунтов
-
 							</div>
 						</li>
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								05
 							</div>
 							<div>
 								Определение глубины залегания подземных вод, их поведения и химического состава
-
 							</div>
 						</li>
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								06
 							</div>
 							<div>
 								Исследование проб воды и грунта в сертифицированной лаборатории
-
 							</div>
 						</li>
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								07
 							</div>
 							<div>
 								Экспертиза условий с прогнозированием развития геологических процессов и рекомендаций по
 								их нивелировке для строительства
-
 							</div>
 						</li>
-						<li class="text-base font-normal py-10 border-b flex items-start gap-10">
+						<li class="py-6 border-b last:border-none flex items-start gap-7">
 							<div class="text-primary text-xl">
 								08
 							</div>
 							<div>
 								Подготовка технического отчета по результатам геологических изысканий, составление
 								разрезов, планов и графиков в печатном, а аткже электронном виде.
-
 							</div>
 						</li>
-
-
 					</ol>
 				</div>
-				<div class="md:w-full lg:w-5/12 bg-bggrey rounded-xl overflow-hidden flex flex-col">
-					<img class="w-full" src="/assets/burbur.png" alt="">
-					<div class="p-16 flex flex-col gap-10 text-white">
-						<p class="text-2xl md:text-xl text-center">
-							За 3 скважины по 8 метров <br>
-							<span class="font-bold">
-								от 19 000 до 42 000 руб.
-							</span>
-						</p>
-						<a href=""
-							class="bg-primary shadow-xl box-border p-4 text-center rounded-xl text-xl font-semibold ">
-							РАСЧИТАТЬ СТОИМОСТЬ
-						</a>
-						<div class="hidden  lg:flex flex-col gap-5">
-							<p class="text-xl text-center">
-								<img src="/assets/on-line.svg" alt="" class="inline-block">
-								Или задайте вопрос
-								<span class="font-bold">ON-LINE</span>
+				<div class="w-full lg:w-5/12 lg:max-w-lg mx-auto py-6 flex items-stretch">
+					<div class="bg-bggrey rounded-xl overflow-hidden flex flex-col w-full">
+						<img class="w-full max-h-80" src="/assets/burbur.png" alt="">
+						<div
+							class="p-4 md:p-10 lg:p-7 flex flex-col gap-7 justify-between max-lg:items-center text-white flex-1">
+							<p class="xs:text-3xl md:text-4xl lg:text-2xl max-xs:text-center">
+								За 3 скважины по 8 метров <br>
+								<span class="font-bold">
+									от 19 000 до 42 000 руб.
+								</span>
 							</p>
 							<a href=""
-								class="inline-block border rounded-xl text-lg font-semibold px-2 py-3 text-center">
-								<img class="inline-block w-6 h-6" src="/assets/Frame.svg" alt="">
-								Написать в WhatsApp
+								class="bg-primary shadow-xl box-border p-4 text-center rounded-xl  sm:text-2xl font-semibold uppercase max-sm:self-stretch md:max-lg:w-8/12">
+								РАСЧИТАТЬ стоимость
 							</a>
-						</div>
+							<div class="hidden  lg:flex flex-col gap-5">
+								<p class="text-xl text-center">
+									<img src="/assets/on-line.svg" alt="" class="inline-block">
+									Или задайте вопрос
+									<span class="font-bold">ON-LINE</span>
+								</p>
+								<a href=""
+									class="inline-block border rounded-xl text-lg font-semibold px-2 py-3 text-center">
+									<img class="inline-block w-6 h-6" src="/assets/Frame.svg" alt="">
+									Написать в WhatsApp
+								</a>
+							</div>
 
+						</div>
 					</div>
 				</div>
 			</div>
@@ -581,7 +583,8 @@
 		</div>
 		</div>
 	</section>
-	<section class="container bg-[#4B4F5A] mx-auto flex gap-14 pt-10 bg-[url('../assets/teodolit.png')] bg-no-repeat bg-left-bottom">
+	<section
+		class="container bg-[#4B4F5A] mx-auto flex gap-14 pt-10 bg-[url('../assets/teodolit.png')] bg-no-repeat bg-left-bottom">
 		<div class="relative min-w-[16rem] w-1/3 flex flex-col items-end px-10">
 			<img src="../assets/olegovich.png" alt="">
 			<div class="bg-white w-64 py-6 rounded-lg text-center absolute bottom-14 right-10">

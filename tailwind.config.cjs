@@ -409,19 +409,15 @@ module.exports = {
       ],
     },
     fontSize: {
-      xs: ['0.75rem', { lineHeight: '1rem' }],
-      sm: ['0.875rem', { lineHeight: '1.25rem' }],
-      base: ['1rem', { lineHeight: '1.5rem' }],
-      lg: ['1.125rem', { lineHeight: '1.75rem' }],
-      xl: ['1.25rem', { lineHeight: '1.75rem' }],
-      '2xl': ['1.5rem', { lineHeight: '2rem' }],
-      '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
-      '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
-      '5xl': ['3rem', { lineHeight: '1' }],
-      '6xl': ['3.75rem', { lineHeight: '1' }],
-      '7xl': ['4.5rem', { lineHeight: '1' }],
-      '8xl': ['6rem', { lineHeight: '1' }],
-      '9xl': ['8rem', { lineHeight: '1' }],
+      xs: ['0.8125rem', { lineHeight: '1.125rem' }], // 13px, 18px
+      sm: ['0.875rem', { lineHeight: '1.5rem' }], // 14px, 24px
+      base: ['1rem', { lineHeight: '1.625rem' }], // 16px, 26px
+      lg: ['1.125rem', { lineHeight: '1.75rem' }], // 18px, 28px 
+      xl: ['1.1875rem', { lineHeight: '1.8125rem' }], // 19px, 29px
+      '2xl': ['1.25rem', { lineHeight: '1.875rem' }], // 20px, 30px
+      '3xl': ['1.75rem', { lineHeight: '2.375rem' }], // 28px, 38px
+      '4xl': ['2rem', { lineHeight: '2.625rem' }], // 32px, 42px
+      '5xl': ['2.375rem', { lineHeight: '3rem' }], //38px, 48px
     },
     fontWeight: {
       thin: '100',

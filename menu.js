@@ -2,9 +2,9 @@ export const useMenu = (btnSelector, menuSelector, toggledClass) => {
 
     document.addEventListener('DOMContentLoaded', () => {
         const buttonElement = document.querySelector(btnSelector);
-        const menuElement = document.querySelector(menuSelector);
+        const bodyElement = document.querySelector('body');
         buttonElement.addEventListener('click', () => {
-            menuElement.classList.toggle(toggledClass);
+            bodyElement.classList.toggle(toggledClass);
         });
 
     });
