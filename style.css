@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-    @import url('./assets/fonts/ptrootui/ptrootui.css');
-}
 
 
 .c-navigation {
