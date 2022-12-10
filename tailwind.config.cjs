@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.html",
     "main.js",
+    'index.html'
   ],
   presets: [],
   darkMode: 'media', // or 'class'
@@ -11,10 +12,8 @@ module.exports = {
       xs: '480px',
       sm: '640px',
       md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px',
-
+      lg: '1000px',
+      xl: '1150px',
     },
     supports: {},
     colors: ({ colors }) => ({
@@ -95,15 +94,21 @@ module.exports = {
       3: '0.75rem',
       3.5: '0.875rem',
       4: '1rem',
+      4.5: '1.125rem',
       5: '1.25rem',
+      5.5: '1.375rem',
       6: '1.5rem',
+      6.5: '1.625rem',
       7: '1.75rem',
+      7.5: '1.875rem',
       8: '2rem',
+      8: '2.125rem',
       9: '2.25rem',
       10: '2.5rem',
       11: '2.75rem',
       12: '3rem',
       14: '3.5rem',
+      15: '3.750rem',
       16: '4rem',
       20: '5rem',
       24: '6rem',
